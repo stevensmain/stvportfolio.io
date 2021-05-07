@@ -15,8 +15,10 @@ export const About = (props) => {
                     <h3>About Me</h3>
                     <p className = "details">My name is Stivens Carrasquel. I am currently 22 years old, I am a Senior Informatics Technician and passionate about web development. Currently focused on Javascript Technologies; such as React, Node, ES6, MondoDB, among others.</p>
                 </div>
-                <div className="about-image">
+                <div className= "about-shadow">
+                    <div className="about-image">
                         <img src= { aboutImg } alt="about__image" />
+                    </div>
                 </div>
         </div>
     )
