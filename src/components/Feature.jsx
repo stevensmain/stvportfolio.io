@@ -21,6 +21,9 @@ export const Feature = () => {
                 <FeatureBox image= {FeatureImage} title= "React"/>
                 <FeatureBox image= {FeatureImage2} title= "Node.js"/>
             </div>
+            <div className="wave">
+            <div className= "wave-effect__contact"><svg className= "viewBox__contact" viewBox="0 0 500 150" preserveAspectRatio="none"><path className= "Path__contact" d="M0.00,49.98C266.08,172.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00Z"></path></svg></div>
+            </div>
         </div>
     )
 }

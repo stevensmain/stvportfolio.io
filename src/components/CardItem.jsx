@@ -3,7 +3,7 @@ import React from 'react';
 export const CardItem = (props) => {
     return (
         <>
-            <li className="cards__item">
+            <li data-aos= "fade-up" className="cards__item">
                     <a href= {props.href} className="cards__item__link">
                     <figure className="cards__item__pic-wrap" data-category= {props.label} >
                         <img 

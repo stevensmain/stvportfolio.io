@@ -24,8 +24,15 @@ input{
   outline: none;
   border: none;
 }
-.logo img{
+.logo {
   width: 90px;
+  height: 90px;
+}
+
+.logo img{
+  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 #main{
 
@@ -91,6 +98,8 @@ nav .menu-btn,
 .menu-icon{
   display:none;
 }
+
+
 
 #main .header__content{
 display: flex;
@@ -174,13 +183,34 @@ background-color: #0099ff;
   margin-top: 60px;
   margin-bottom: -80px;
 }
+
+.wave{position:absolute;bottom:-4px;min-width:100%}
+
+.wave-noi{position:absolute;top:-2px;min-width:100%}
+.wave-noi-end{position:absolute;bottom:-145px;min-width:100%}
+
+.wave__effect{
+  height: 155px; 
+  overflow: hidden;
+}
+
+.viewBox{
+  height: 100%; 
+  width: 100%;
+}
+
+.Path{
+  stroke:none; 
+  fill:#FFF;
+}
+
 #about{
 width:100%;
 height: 100vh;
 box-sizing: border-box;
 display: flex;
 align-items: center;
-padding: 50px 5% 0px 5%;
+padding: 50px 0 0px 0%;
 position: relative;
 }
 
@@ -189,7 +219,7 @@ position: relative;
 width: 500px;
 position: relative;
   left: 22%;
-top: 20%;
+top: 10%;
 transform: translate(-22%,-50%);
 }
 
@@ -210,7 +240,7 @@ color:#272727;
 .about-shadow {
   position: relative;
   left: 20%;
-  top: 0;
+  top: -20%;
   width: 300px;
   height: 300px;
   margin: 50px 20px 70px;
@@ -250,7 +280,7 @@ color:#272727;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.25);
 }
 
 .about-me .about-image img:hover{
@@ -258,16 +288,30 @@ color:#272727;
   background: linear-gradient(45deg,#03a9f4, rgba(3,169,244,0.5)); ;
 }
 
+.wave-effect__about{
+  height: 155px; 
+  overflow: hidden;
+}
+
+.viewBox__about{
+  height: 100%; 
+  width: 100%;
+}
+
+.Path__about{
+  stroke:none; 
+  fill:#00001d;
+}
+
 #features{
   width:100%;
-  height:100vh;
+  height:120vh;
   box-sizing: border-box;
   font-family: calibri;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 40px ;
+  padding-top: 10% ;
   background-color: #fff;
 }
 
@@ -452,6 +496,20 @@ color:#272727;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 
+.wave-effect__contact{
+  height: 155px; 
+  overflow: hidden;
+}
+
+.viewBox__contact{
+  height: 100%; 
+  width: 100%;
+}
+
+.Path__contact{
+  stroke:none; 
+  fill:#00b7ff;
+}
 
 #contact{
   background-color: #00b7ff;
@@ -466,7 +524,7 @@ font-size:2.5rem;
   margin:20px;
   color: #fff;
 }
-.contact-input{
+/* .contact-input{
 width:400px;
 height:50px;
 background-color:#FFFFFF;
@@ -474,21 +532,14 @@ display:flex;
 justify-content: center;
 border-radius: 50px;
 box-shadow: 2px 2px 30px rgba(0,0,0,0.15);
-}
-.contact-input input{
-width:100%;
-background-color: transparent;
-border:none;
-outline: none;
-text-align: center;
-color:#242425;
-}
-.contact-input a{
+} */
+
+.contact-input .email__to {
 width:200px;
 height:35px;
-background-color:#00b7ff;
-color:#FFFFFF;
-display: flex;
+background-color:#FFFFFF;
+color: #00b7ff;
+display: inline-flex;
 font-size: 0.9rem;
 justify-content: center;
 align-items: center;
@@ -498,13 +549,39 @@ border-radius: 20px;
   transition: 0.4s ease-out;
 }
 .contact-input a:hover{
-  background-color:#0099ff;
+  background-color: #0099ff;
+  color: #FFFFFF;
 }
+
+.social__medias ul {
+  margin-top: 30px;
+  padding: 0;
+  width:400px;
+  height:50px;
+  color: #000;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__medias ul .icons{
+  margin: 20px;
+  padding: 0;
+  color: #fff;
+  justify-content: center;
+}
+
 @media(max-width:1190px){
 #main{
   background-size: 1150px !important;
   
 }
+
+.logo{
+  margin: 5px;
+  height: 5rem;
+}
+
 .name{
   left: 50%;
   top: 50%;
@@ -572,6 +649,7 @@ border-radius: 20px;
   position: relative;
   text-align: center;
   align-content: center;
+  justify-content: center;
   width: 10rem;
 }
 
@@ -590,7 +668,6 @@ border-radius: 20px;
   justify-content: center;
       text-align: center;
       display: flex;
-
 }
 .about-me .about-text{
       width: 90%;
@@ -603,11 +680,17 @@ border-radius: 20px;
       width: 100%;
   }
   #features{
-      margin-bottom: 100px;
+      margin-bottom: 0px;
   }
+
+  .container{
+    margin-bottom: 100px;
+  }
+
 #presentaion{
       display: none;
   }
+
 }
 @media(max-width:600px){
 .name{
