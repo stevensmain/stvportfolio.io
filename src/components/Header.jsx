@@ -3,6 +3,7 @@ import { Nav } from './Nav'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import headerimg  from '../images/head.png';
+import pdfFile  from '../Document/StivensCV.pdf'
 
 
 export const Header = () => {
@@ -17,7 +18,7 @@ export const Header = () => {
                 <div className= "name">
                     <h1 data-aos="fade-left" >Hi, my name is <span>Stivens Carrasquel</span></h1>
                     <p className = "details">I´m a Senior Technical in Computer Science. Currenttly, I´m a Frontend Javascript Developer focused on build accesible human-centered products.</p>
-                    <a href= './pdf' target='_blank' className= "cv-btn">Read more</a>
+                    <a href={ pdfFile } className="cv-btn" download>Read more</a>
                 </div>
                 <div className="header-image">
                         <img src= { headerimg } alt="about__image" />
