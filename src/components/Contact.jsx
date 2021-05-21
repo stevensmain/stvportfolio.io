@@ -36,7 +36,7 @@ export const Contact = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/stivens-carrasquel-a691391b3/">
                         <FontAwesomeIcon 
                         className= "icons" 
                         icon= {faLinkedinIn} 
