@@ -20,7 +20,7 @@ export const Header = () => {
                     <p className = "details">I´m a Senior Technical in Computer Science. Currenttly, I´m a Frontend Javascript Developer focused on build accesible human-centered products.</p>
                     <a href={ pdfFile } className="cv-btn" download>Read more</a>
                 </div>
-                <div className="header-image">
+                <div data-aos="fade-down" className="header-image">
                         <img src= { headerimg } alt="about__image" />
                 </div>
             </div>
