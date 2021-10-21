@@ -1,0 +1,130 @@
+#features {
+    width: 100%;
+    height: 120vh;
+    box-sizing: border-box;
+    position: relative;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    background-color: $Navy;
+}
+
+#features h3 {
+    font-size: 2.5rem;
+    margin: 20px;
+    color: $White;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 600px;
+    margin: 20px auto;
+}
+
+.hexagon {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 50px 20px 70px;
+}
+
+.hexagon::before {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(rgba(0, 0, 0, 0.15), transparent);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.hexagon:hover::before {
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.hexagon .shape {
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: 0.5s;
+    position: relative;
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        z-index: 10;
+        place-items: center;
+        background: linear-gradient(45deg, $Lightest_Navy, rgba($White, 0.5));
+        color: #fff;
+        opacity: 0;
+        transition: all .5s;
+    }
+    &:hover .text {
+        opacity: 1;
+    }
+}
+
+.hexagon .shape:hover {
+    transform: translateY(-10px);
+}
+
+.hexagon .shape img {
+    width: 100%;
+    height: 100%;
+}
+
+.wave-effect__contact {
+    height: 155px;
+    overflow: hidden;
+}
+
+.viewBox__contact {
+    height: 100%;
+    width: 100%;
+}
+
+.Path__contact {
+    stroke: none;
+    fill: $Dark_Blue;
+}
